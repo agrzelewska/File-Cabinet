@@ -15,7 +15,7 @@ default: &default
 development:
   <<: *default
   # database: db/development.sqlite3
-  database: myapp_development
+  database: File-Cabinet_development
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -23,11 +23,11 @@ development:
 test:
   <<: *default
   # database: db/test.sqlite3
-  database: myapp_test
+  database: File-Cabinet_test
 
 production:
   <<: *default
   # database: db/production.sqlite3
-  database: myapp_production
-  username: myapp
-  password: <%= ENV['MYAPP_DATABASE_PASSWORD'] %>
+  database: File-Cabinet_production
+  username: File-Cabinet
+  password: <%= ENV['FILE-CABINET_DATABASE_PASSWORD'] %>
